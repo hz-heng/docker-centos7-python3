@@ -16,7 +16,7 @@ RUN yum -y install wget make yum-utils
 RUN yum-builddep python -y
 
 # Download the python3.5
-RUN wget -O /tmp/Python-3.5.1 https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
+RUN wget -O /tmp/Python-3.5.1.tgz https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tgz
 
 # Build and install python3.5
 RUN tar -zxvf /tmp/Python-3.5.1.tgz -C /tmp/
