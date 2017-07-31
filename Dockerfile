@@ -32,7 +32,7 @@ RUN ln -s /usr/local/bin/pip3 /usr/bin/pip
 RUN pip install --upgrade pip
 
 # Fix the yum
-RUN sed -i 's/python/python2' /usr/bin/yum
+RUN sed -i 's/python/python2/' /usr/bin/yum
 
 # Clean
 RUN rm -rf /tmp/Python-3.5.1*
